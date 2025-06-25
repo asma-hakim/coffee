@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>the nice coffee</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      function placeOrder() {
+        let drink = prompt("what would you like to order?");
+        document.getElementById("order-msg").innerText =
+          "order confirmed: " + drink + " ✅️";
+      }
+
+      function askfavorite() {
+        let drink = prompt("what's your favorite drink?");
+        alert("yum! " + drink + " sounds delicious");
+        console.log("user favorite drink is", drink);
+      }
+    </script>
+    <header>
+      <center>
+        <h1>menu</h1>
+      </center>
+      <center>
+        <h2 id="menu_title">sunny bean coffee</h2>
+        <p class="note">welcome to our coffee</p>
+        <button
+          class="btn bto-primary btn-lg mt-2"
+          onclick="alert('welcome to sunny bean coffee!')"
+        >
+          <h3>say hello 👋</h3>
+        </button>
+        <button class="btn bto-primary btn-lg mt-2" onclick="askfavorite()">
+          <h3>tell us your favorite</h3>
+        </button>
+
+        <p class="mt-2" id="order-msg"></p>
+        <button class="btn btn-primary btn-lg mt-1" onclick="placeOrder()">
+          place order
+        </button>
+
+        <nav>
+          <a href="#pasterises">pasterises</a>
+          <a href="#coffee">coffee</a>
+          <a href="#juices">juices</a>
+          <a href="#drinks">drinks</a>
+          <a href="#teas">teas</a>
+        </nav>
+      </center>
+    </header>
+
+    <section id="pasterises">
+      <u>
+        <h2>pasterises</h2>
+      </u>
+      <ul>
+        <h5><li>cake 2.1dt🍰</li></h5>
+        <h5><li>birthday cake 43.00dt🎂</li></h5>
+        <h5><li>pan cake 4.5dt🥞</li></h5>
+        <h5><li>cupcake 2.00dt🧁</li></h5>
+        <h5><li>moon cake 3.00dt🥮</li></h5>
+        <h5><li>cookies 4.3dt🍪</li></h5>
+        <h5><li>croissant 2.00dt🥐</li></h5>
+        <h5><li>donuts 2.00dt🍩</li></h5>
+      </ul>
+    </section>
+    <hr />
+    <section id="coffee">
+      <u>
+        <h2>coffee</h2>
+      </u>
+      <ul>
+        <h5><li>amirécano 20.00dt</li></h5>
+        <h5><li>laté 6.00dt</li></h5>
+        <h5><li>expresso 9.00dt</li></h5>
+        <h5><li>capotchino 5.00dt☕️</li></h5>
+        <h5><li>hot chocolate 8.00dt</li></h5>
+      </ul>
+    </section>
+    <hr />
+    <section id="juices">
+      <u>
+        <h2>juices</h2>
+      </u>
+      <ul>
+        <h5><li>juice 1.2dt🥤</li></h5>
+        <h5><li>beverage box 40.00dt🧃</li></h5>
+        <h5><li>orange juice 3.00dt</li></h5>
+        <h5><li>strabery juice 3.4dt</li></h5>
+        <h5><li>mocktall 4.00dt</li></h5>
+        <h5><li>lemonade 6.00dt🍋</li></h5>
+        <h5><li>wine 9.00dt🍷</li></h5>
+      </ul>
+    </section>
+    <hr />
+    <section id="drinks">
+      <u>
+        <h2>drinks</h2>
+      </u>
+      <ul>
+        <h5><li>soda 2.3dt🥤</li></h5>
+        <h5><li>milk 2.00dt🥛</li></h5>
+        <h5><li>water 3.00dt🧺</li></h5>
+      </ul>
+    </section>
+    <hr />
+    <section id="teas">
+      <u>
+        <h2>teas</h2>
+      </u>
+      <ul>
+        <h5><li>boba 5.00dt</li></h5>
+        <h5><li>tea 1.00dt</li></h5>
+        <h5><li>iced tea 5.00dt</li></h5>
+        <h5><li>blak tea 3.4dt</li></h5>
+        <h5><li>buble tea 20.00dt</li></h5>
+      </ul>
+    </section>
+    <hr />
+    <div>
+      <ul>
+        <center>
+          <h3>اهلا وسهلا بكم</h3>
+          <h3>ممنوع الكريدي</h3>
+          <h3>شكرا لتفهمكم</h3>
+        </center>
+      </ul>
+    </div>
+  </body>
+</html>
